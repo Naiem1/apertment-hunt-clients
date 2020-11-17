@@ -6,7 +6,7 @@ const AllHouses = () => {
     const [houses,setHouses]= useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allRentalHouses')
+        fetch('https://agile-refuge-87366.herokuapp.com/allRentalHouses')
         .then(res=>res.json())
         .then(data=>setHouses(data))
     },[])
